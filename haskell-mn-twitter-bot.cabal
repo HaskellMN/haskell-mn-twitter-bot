@@ -57,7 +57,7 @@ executable haskell-mn-twitter-bot
   -- other-extensions:    
   
   -- Other library packages from which modules are imported.
-  build-depends:       base ==4.*
+  build-depends:       base ==4.*, HTTP == 4000.*, feed >= 0.3
   
   -- Directories containing source files.
   hs-source-dirs:      src
