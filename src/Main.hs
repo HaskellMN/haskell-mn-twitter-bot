@@ -1,10 +1,9 @@
 module Main where
-import Network.HTTP (getRequest, simpleHTTP, getResponseBody)
+import Control.Applicative
 import Control.Exception (try, IOException)
-import Control.Applicative ((<$>))
-import Text.Feed.Import
-import Text.Feed.Types
-import System.IO
+import Network.HTTP      (getRequest, simpleHTTP, getResponseBody)
+import System.IO         (stderr, hPutStrLn)
+import Text.Feed.Import  (parseFeedString)
 
 urlForFeed :: String
 urlForFeed = "http://haskell.mn/atom.xml"
