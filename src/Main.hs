@@ -18,5 +18,5 @@ main :: IO ()
 main = do
   result <- flip (>>=) parseFeedString <$> grabFeedText urlForFeed
   case result of
-    Nothing  -> hPutStrLn stderr $ "No feed found at" ++ urlForFeed
+    Nothing  -> hPutStrLn stderr $ "No feed found at " ++ urlForFeed
     Just str -> print str
