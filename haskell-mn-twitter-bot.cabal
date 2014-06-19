@@ -60,7 +60,7 @@ executable haskell-mn-twitter-bot
   build-depends:       base >=4.6 && <4.7
   
   -- Directories containing source files.
-  -- hs-source-dirs:      
+  hs-source-dirs:      src
   
   -- Base language which the package is written in.
   default-language:    Haskell2010
